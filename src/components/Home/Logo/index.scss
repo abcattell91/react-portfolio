@@ -3,24 +3,26 @@
   background-image: url('../../../assets/images/letter-a.png');
   background-size: contain;
   border-radius: 30px;
-  width: 150px;
-  height: 150px;
+  width: 15vh;
+  height: 15vh;
   position: absolute;
-  top: calc(50% - 150px / 2);
-  right: calc(25% - 150px / 2);
+  top: calc(50% - 15vh / 2);
+  right: calc(25% - 15vh / 2);
+  background-repeat: no-repeat;
 }
 
 .drag-title {
-  font-size: 20px;
+  font-size: 3vw;
   color: #ffd700;
   text-align: center;
-  font-family: 'Coolvetica';
-  width: 300px;
-  height: 300px;
+  font-family: 'la belle aurore';
+  width: 30vw;
+  height: 50vh;
   border-radius: 30px;
   position: absolute;
-  top: calc(50% - 300px / 2);
-  right: calc(25% - 300px / 2);
+  top: calc(50% - 50vh / 2);
+  right: calc(25% - 30vw / 2);
+  font-weight: 100;
 }
 
 .drag-container .drag-area {
@@ -30,11 +32,11 @@
   margin: auto;
   opacity: 0.2;
   background: white;
-  width: 300px;
-  height: 300px;
+  width: 30vw;
+  height: 50vh;
   border-radius: 30px;
-  top: calc(50% - 300px / 2);
-  right: calc(25% - 300px / 2);
+  top: calc(50% - 50vh / 2);
+  right: calc(25% - 30vw / 2);
 }
 
 .refresh {
