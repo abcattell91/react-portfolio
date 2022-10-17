@@ -53,7 +53,7 @@
 
   .flat-button {
     color: #ffd700;
-    font-size: 11px;
+    font-size: 16px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
@@ -65,6 +65,11 @@
     float: right;
     text-align: center;
     margin-right: 10px;
+
+    &:hover {
+    background-color: #115173;
+    transition: 0.2s;
+    }
   }
 }
 

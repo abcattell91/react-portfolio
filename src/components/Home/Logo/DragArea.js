@@ -1,8 +1,7 @@
-import * as React from "react";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 
-export const Example = () => {
+export const DragArea = () => {
   const constraintsRef = useRef(null);
 
   return (

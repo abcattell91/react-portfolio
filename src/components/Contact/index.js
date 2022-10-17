@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import { useRef } from 'react'
-import emailjs, { sendForm } from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
