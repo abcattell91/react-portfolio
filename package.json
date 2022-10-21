@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "animejs": "^3.2.1",
+    "firebase": "^9.12.1",
     "framer-motion": "^7.5.3",
     "gsap-trial": "^3.11.3",
     "loaders.css": "^0.1.2",
