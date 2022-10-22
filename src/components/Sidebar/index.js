@@ -4,7 +4,7 @@ import lettera from '../../assets/images/letter-a.png';
 import logoSub from '../../assets/images/logoSub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faSuitcase, faGear } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => (
   <div className='nav-bar'>
@@ -39,6 +39,11 @@ const Sidebar = () => (
         <a target="_blank" rel="noreferrer" href="https://github.com/abcattell91">
           <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-icon" />
         </a>
+      </li>
+      <li>
+        <NavLink exact="true" activeclassname='active' to="/dashboard">
+          <FontAwesomeIcon icon={faGear} color="#4d4d4e" className="anchor-icon" />
+        </NavLink>
       </li>
     </ul>
   </div>
