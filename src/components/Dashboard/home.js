@@ -1,8 +1,11 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { auth, storage, db } from '../../firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { addDoc } from 'firebase/firestore';
 import { collection } from 'firebase/firestore';
+import './index.scss';
+import AnimatedLetters from '../AnimatedLetters';
+import Loader from 'react-loaders';
 
 
 const Home = () => {
@@ -56,18 +59,41 @@ const Home = () => {
         }
     }
 
-    return (
-        <div className="dashboard">
+    const [letterClass, setLetterClass] = useState('text-animate')
 
-            <form ref={form} onSubmit={submitPortfolio}>
-                <p><input type="text" placeholder="Name" /></p>
-                <p><textarea placeholder="Description" /></p>
-                <p><input type="text" placeholder="Url" /></p>
-                <p><input type="file" placeholder="Image" /></p>
-                <button type="submit">Submit</button>
-                <button onClick={() => auth.signOut()}>Sign out</button>
-            </form>
-        </div>
+    useEffect(() => {
+      setTimeout(() => {
+        setLetterClass('text-animate-hover')
+      }, 3000)
+    }, [])
+
+    return (
+      <>
+        <div className="container portfolio-submit-page">
+          <div className="text-zone">
+            <h1 className="page-title">
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={"Submit Item".split("")}
+                index={15}
+              />
+            </h1>
+              <div className="portfolio-form">
+                <form ref={form} onSubmit={submitPortfolio}>
+                  <ul>
+                    <li className="half"><input type="text" placeholder="Name" /></li>
+                    <li className="half"><textarea placeholder="Description" /></li>
+                    <li className="half"><input type="text" placeholder="Url" /></li>
+                    <li className="half"><input type="file" placeholder="Image" /></li>
+                    <li className="half"><button type="submit" className="flat-button">Submit</button></li>
+                    <li className="half"><button onClick={() => auth.signOut()} className="flat-button">Sign out</button></li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+        <Loader type="pacman" />
+        </>
     )
 }
 
