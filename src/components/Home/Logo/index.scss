@@ -13,7 +13,7 @@
 
 .drag-title {
   font-size: 3vw;
-  color: #ffd700;
+  color: #fca311;
   text-align: center;
   font-family: 'la belle aurore';
   width: 30vw;
@@ -23,6 +23,8 @@
   top: calc(50% - 50vh / 2);
   right: calc(25% - 30vw / 2);
   font-weight: 100;
+  background-color: #e3e3e3;
+  padding: 8px;
 }
 
 .drag-container .drag-area {
@@ -52,4 +54,11 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .drag-title {
+    background-color: #fca311;
+    color: black
+  }
 }
