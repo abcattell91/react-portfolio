@@ -114,3 +114,33 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .images-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .portfolio-page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    h1.page-title {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .image-box {
+      height: 200px;
+      max-width: 100%;
+    }
+
+    .content {
+      width: 80% !important;
+    }
+
+    .btn {
+      width: 90%;
+    }
+  }
+}

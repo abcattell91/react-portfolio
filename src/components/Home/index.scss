@@ -80,3 +80,61 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1::before,
+  .home-page h1::after {
+    display: none;
+  }
+
+  .home-page {
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .flat-button {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 125px;
+    }
+    .drag-container div {
+      z-index: 1;
+      position: absolute;
+      margin: auto;
+      width: 12vh;
+      height: 12vh;
+      top: calc(100% - 60vh / 2);
+      right: calc(50% - 24vw / 2);
+    }
+
+    .drag-container .drag-area {
+      z-index: 0;
+      position: relative;
+      margin: auto;
+      opacity: 0.2;
+      background: white;
+      width: 44vh;
+      height: 50vh;
+      border-radius: 30px;
+      top: calc(50% - 50vh / 2);
+      right: calc(20% - 40vw / 2);
+    }
+    .drag-title {
+      position: relative;
+      width: 100px;
+      height: auto;
+      top: 50px;
+      right: 0;
+      box-sizing: border-box;
+      margin: auto;
+      font-size: 16px;
+      z-index: 0;
+    }
+  }
+}
