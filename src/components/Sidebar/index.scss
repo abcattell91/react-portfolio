@@ -1,5 +1,7 @@
+@import '../../App.scss';
+
 .nav-bar {
-  background: #14213d;
+  background: $navbar-color;
   width: 100%;
   height: 100px;
   position: absolute;
@@ -52,7 +54,7 @@
       }
 
       &:hover {
-        color: #fca311;
+        color: $primary-color;
 
         svg {
           opacity: 0;
@@ -105,7 +107,7 @@
 
     a.active {
       svg {
-        color: #fca311;
+        color: $primary-color;
       }
     }
   }
@@ -130,7 +132,7 @@
 
       &:hover {
         .anchor-icon {
-          color: #fca311;
+          color: $primary-color;
         }
       }
     }

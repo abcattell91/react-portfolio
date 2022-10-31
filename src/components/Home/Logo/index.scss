@@ -1,3 +1,5 @@
+@import '../../../App.scss';
+
 .drag-container div {
   background: transparent;
   background-image: url('../../../assets/images/letter-a.png');
@@ -13,7 +15,7 @@
 
 .drag-title {
   font-size: 3vw;
-  color: #fca311;
+  color: $primary-color;
   text-align: center;
   font-family: 'la belle aurore';
   width: 30vw;
@@ -58,7 +60,7 @@
 
 @media screen and (max-width: 1200px) {
   .drag-title {
-    background-color: #fca311;
+    background-color: $primary-color;
     color: black
   }
 }
