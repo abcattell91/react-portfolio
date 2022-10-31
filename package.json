@@ -1,5 +1,6 @@
 {
   "name": "react-portfolio",
+  "homepage": "https://github.com/abcattell91/react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +15,9 @@
     "animejs": "^3.2.1",
     "firebase": "^9.12.1",
     "framer-motion": "^7.5.3",
+    "gh-pages": "^4.0.0",
     "gsap-trial": "^3.11.3",
+    "leaflet": "^1.9.2",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -26,8 +29,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
