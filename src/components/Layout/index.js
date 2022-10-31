@@ -7,7 +7,10 @@ const Layout = () => {
   <div className="App">
     <Sidebar />
     <div className="page">
-      <span className="tags top-tags">&lt;body&gt;</span>
+      <span className="tags top-tags">
+        <span className="top-tag-html">&lt;html&gt;</span><br />
+        <span className="top-tag-body">&lt;body&gt;</span>
+      </span>
 
       <Outlet />
 

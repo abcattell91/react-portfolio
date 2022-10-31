@@ -8,17 +8,22 @@
 
 .top-tags {
   bottom: auto;
-  top: 35px;
+  top: 150px;
 }
 
 .tags {
-  color: $primary-color;
+  color: $secondary-color;
   opacity: 0.6;
   position: absolute;
   bottom: 0;
   left: 120px;
   font-size: 18px;
   font-family: 'La Belle Aurore';
+}
+
+.top-tag-html {
+  margin-left: -20px;
+  top: 200px
 }
 
 .bottom-tag-html {
