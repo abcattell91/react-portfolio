@@ -25,7 +25,7 @@
   top: calc(50% - 50vh / 2);
   right: calc(25% - 30vw / 2);
   font-weight: 100;
-  background-color: #e3e3e3;
+  background: none;
   padding: 8px;
 }
 
@@ -35,12 +35,12 @@
   left: auto;
   margin: auto;
   opacity: 0.2;
-  background: white;
-  width: 30vw;
-  height: 50vh;
+  background: rgba(255, 255, 255, 0.465);
+  width: 31vw;
+  height: 51vh;
   border-radius: 30px;
-  top: calc(50% - 50vh / 2);
-  right: calc(25% - 30vw / 2);
+  top: calc(80% - 50vh);
+  right: calc(40% - 30vw);
 }
 
 .refresh {
@@ -50,7 +50,7 @@
   border-radius: 10px;
   width: 20px;
   height: 20px;
-  top: 10px;
+  top: 40px;
   right: 10px;
   display: flex;
   justify-content: center;

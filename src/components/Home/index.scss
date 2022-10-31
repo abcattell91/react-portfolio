@@ -12,7 +12,7 @@
   }
 
   h1 {
-    color: rgb(255, 255, 255);
+    color: $primary-color;
     font-size: 56px;
     line-height: 53px;
     margin: 0;
@@ -22,7 +22,7 @@
     &::before {
       content: '<h1>';
       font-family: 'La belle Aurore';
-      color: $primary-color;
+      color: $secondary-color;
       position: absolute;
       font-size: 18px;
       margin-top: -40px;
@@ -33,7 +33,7 @@
     &::after {
       content: '</h1>';
       font-family: 'La belle Aurore';
-      color: $primary-color;
+      color: $secondary-color;
       position: absolute;
       font-size: 18px;
       margin-top: 18px;

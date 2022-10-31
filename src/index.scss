@@ -1,3 +1,5 @@
+@import '/src/App.scss';
+
 html {
   font-size: 62.5%;
 }
@@ -6,7 +8,7 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
-  background-color: #e5e5e5;
+  background-color: $background-color;
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
@@ -21,6 +23,6 @@ code {
 @media screen and (max-width: 1200px) {
   body {
     overflow: visible;
-    background-color: #e5e5e5 !important;
+    background-color: $background-color !important;
   }
 }

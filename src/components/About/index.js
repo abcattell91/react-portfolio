@@ -2,8 +2,9 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact} from '@fortawesome/free-brands-svg-icons';
+import { faCss3, faGitAlt, faHtml5, faJsSquare, faReact} from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
+import Ruby from '../../assets/images/rails-logo.png'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -32,7 +33,7 @@ const About = () => {
       <div className="stage-cube-cont">
         <div className='cubespinner'>
           <div className="face1">
-            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+            <img src={Ruby} alt="Ruby" />
           </div>
           <div className="face2">
             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
