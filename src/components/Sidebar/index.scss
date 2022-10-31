@@ -142,7 +142,6 @@
 .hamburger-icon,
 .close-icon {
   display: none;
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -151,7 +150,6 @@
     position: initial;
     height: auto;
     min-height: auto;
-
     ul, nav {
       display: none;
     }
@@ -195,6 +193,7 @@
       position: absolute;
       top: 15px;
       right: 15px;
+      color: $primary-color;
     }
   }
 }
