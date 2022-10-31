@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/abcattell91/react-portfolio/static/css/main.87e1c8fc.css",
+    "main.js": "/abcattell91/react-portfolio/static/js/main.d1e33d23.js",
+    "static/js/787.a2cb61a6.chunk.js": "/abcattell91/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/letter-a.png": "/abcattell91/react-portfolio/static/media/letter-a.04faa0ab9aae29c227bb.png",
+    "static/media/helvetica-neu.ttf": "/abcattell91/react-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/abcattell91/react-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/abcattell91/react-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/abcattell91/react-portfolio/index.html",
+    "main.87e1c8fc.css.map": "/abcattell91/react-portfolio/static/css/main.87e1c8fc.css.map",
+    "main.d1e33d23.js.map": "/abcattell91/react-portfolio/static/js/main.d1e33d23.js.map",
+    "787.a2cb61a6.chunk.js.map": "/abcattell91/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87e1c8fc.css",
+    "static/js/main.d1e33d23.js"
+  ]
+}
