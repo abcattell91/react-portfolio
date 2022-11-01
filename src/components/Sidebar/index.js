@@ -12,10 +12,10 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
-      <Link className='logo' to='/'>
+      <div className='logo'>
       <img src={lettera} alt="logo" />
       <img className='sublogo' src={logoSub} alt="logoSubtitle" />
-    </Link>
+    </div>
       <nav className={showNav ? 'mobile-show' : ''}>
       <NavLink onClick={() => setShowNav(false)} exact="true" activeclassname='active' to="/">
         <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -36,21 +36,21 @@ const Sidebar = () => {
       <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faClose} color="#4d4d4e" size="3x" className="close-icon" />
       </nav>
       <ul>
-      <li>
-        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/alexandercattell/">
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" className="anchor-icon" />
-        </a>
-      </li>
-      <li>
-        <a target="_blank" rel="noreferrer" href="https://github.com/abcattell91">
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-icon" />
-        </a>
-      </li>
-      <li>
-        <NavLink exact="true" activeclassname='active' to="/dashboard">
-          <FontAwesomeIcon icon={faGear} color="#4d4d4e" className="anchor-icon" />
-        </NavLink>
-      </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/alexandercattell/">
+            <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" className="anchor-icon" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer" href="https://github.com/abcattell91">
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-icon" />
+          </a>
+        </li>
+        <li>
+          <NavLink exact="true" activeclassname='active' to="/dashboard">
+            <FontAwesomeIcon icon={faGear} color="#4d4d4e" className="anchor-icon" />
+          </NavLink>
+        </li>
       </ul>
       <FontAwesomeIcon
           onClick={() => setShowNav(true)}

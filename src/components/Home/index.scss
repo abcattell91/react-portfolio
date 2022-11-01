@@ -63,7 +63,8 @@
   }
 
   .flat-button {
-    color: var(--primary-color);
+    background-color: var(--background-color);
+    color: black;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
@@ -78,7 +79,7 @@
 
     &:hover {
       background: var(--primary-color);
-      color: #333;
+      color: white;
     }
   }
 
@@ -116,8 +117,13 @@
       margin: 20px auto 0 auto;
       width: 125px;
       background-color: var(--primary-color);
-      color: black;
+      color: white;
       text-align: center;
+
+      &:hover {
+        background: var(--background-color);
+        color: black;
+      }
     }
     .drag-container div {
       z-index: 1;
@@ -134,7 +140,7 @@
       position: relative;
       margin: auto;
       opacity: 0.2;
-      background: white;
+      background: lightgray;
       width: 80vw;
       height: 30vh;
       border-radius: 30px;

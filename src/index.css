@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #F77F00;
-  --secondary-color: #EAE2B7;
-  --form-color: #EAE2B7;
-  --background-color: #003049;
-  --navbar-color: #D62828;
-  --p-text: #EAE2B7;
+  --primary-color: black;
+  --secondary-color: rgb(132, 132, 132);
+  --form-color: lightgray;
+  --background-color: white;
+  --navbar-color: lightgray;
+  --p-text: rgba(0, 0, 0, 0.661);
   --card-text: white;
 }
 
