@@ -53,7 +53,7 @@
     .title {
       margin-bottom: 0;
       margin-top: 0;
-      color:$card-text;
+      color:var(--card-text);
       font-style: 24px;
       font-weight: 500;
       line-height: 24px;
@@ -62,7 +62,7 @@
     .description {
       font-style: 14px;
       margin-bottom: 5px;
-      color: $card-text;
+      color: var(--card-text);
       font-weight: 700;
       font-family: sans-serif;
     }
@@ -73,7 +73,7 @@
       padding: 0 23px;
       height: 40px;
       line-height: 34px;
-      border: 2px solid $primary-color;
+      border: 2px solid var(--primary-color);
       border-radius: 4px;
       font-size: 14px;
       color: white;
@@ -86,13 +86,13 @@
 
     .button:hover {
       transform: translateY(-3px);
-      background: $primary-color;
+      background: var(--primary-color);
       transition: 0.6s;
     }
 
     &:after {
       content: "";
-      background: linear-gradient(180deg, $primary-color, #000);
+      background: linear-gradient(180deg, var(--primary-color), #000);
       position: absolute;
       left: 0;
       right: 0;

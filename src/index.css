@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #F77F00;
+  --secondary-color: #EAE2B7;
+  --form-color: #EAE2B7;
+  --background-color: #003049;
+  --navbar-color: #D62828;
+  --p-text: #EAE2B7;
+  --card-text: white;
+}
+
+[data-theme='dark'] {
+  --primary-color: #F77F00;
+  --secondary-color: #EAE2B7;
+  --form-color: #EAE2B7;
+  --background-color: #003049;
+  --navbar-color: #D62828;
+  --p-text: #EAE2B7;
+  --card-text: white;
+}
+
+
+body {
+  margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
+  color: #444;
+  background-color: var(--background-color);
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+    background-color: var(--background-color) !important;
+  }
+}

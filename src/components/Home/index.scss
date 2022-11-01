@@ -12,7 +12,7 @@
   }
 
   h1 {
-    color: $primary-color;
+    color: var(--primary-color);
     font-size: 56px;
     line-height: 53px;
     margin: 0;
@@ -22,7 +22,7 @@
     &::before {
       content: '<h1>';
       font-family: 'La belle Aurore';
-      color: $secondary-color;
+      color: var(--secondary-color);
       position: absolute;
       font-size: 18px;
       margin-top: -40px;
@@ -33,7 +33,7 @@
     &::after {
       content: '</h1>';
       font-family: 'La belle Aurore';
-      color: $secondary-color;
+      color: var(--secondary-color);
       position: absolute;
       font-size: 18px;
       margin-top: 18px;
@@ -53,7 +53,7 @@
   }
 
   h2 {
-    color: $secondary-color;
+    color: var(--secondary-color);
     margin-top: 20px;
     font-weight: 400;
     font-size: 11px;
@@ -63,21 +63,21 @@
   }
 
   .flat-button {
-    color: $primary-color;
+    color: var(--primary-color);
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid $primary-color;
+    border: 1px solid var(--primary-color);
     margin-top: 25px;
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
-      background: $primary-color;
+      background: var(--primary-color);
       color: #333;
     }
   }
@@ -115,7 +115,7 @@
       display: block;
       margin: 20px auto 0 auto;
       width: 125px;
-      background-color: $primary-color;
+      background-color: var(--primary-color);
       color: black;
       text-align: center;
     }
