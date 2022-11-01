@@ -1,5 +1,9 @@
 @import '../../App.scss';
 
+.App {
+  transition: all .5s;
+}
+
 .page {
   width: 100%;
   height: 100%;
@@ -12,7 +16,7 @@
 }
 
 .tags {
-  color: $secondary-color;
+  color: var(--secondary-color);
   opacity: 0.6;
   position: absolute;
   bottom: 0;
@@ -50,7 +54,7 @@
     h1 {
       font-size: 53px;
       font-family: 'Coolvetica';
-      color: $primary-color;
+      color: var(--primary-color);
       font-weight: 400;
       margin-top: 0;
       position: relative;
@@ -60,7 +64,7 @@
       &:before {
         content: '<h1>';
         font-family: 'La Belle Aurore', cursive;
-        color: $primary-color;
+        color: var(--primary-color);
         font-size: 18px;
         position: absolute;
         margin-top: -10px;
@@ -72,7 +76,7 @@
       &:after {
         content: '<h1/>';
         font-family: 'La Belle Aurore', cursive;
-        color: $primary-color;
+        color: var(--primary-color);
         font-size: 18px;
         line-height: 18px;
         position: absolute;
@@ -85,7 +89,7 @@
 
     p {
       font-size: 20px;
-      color: $p-text;
+      color: var(--p-text);
       font-family: sans-serif;
       font-weight: 300;
       max-width: fit-content;
@@ -111,7 +115,7 @@
 
   .text-animate-hover {
     &:hover {
-      color: $card-text;
+      color: var(--card-text);
     }
   }
 }
