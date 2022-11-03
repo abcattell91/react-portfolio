@@ -10,6 +10,10 @@
   overflow: hidden;
 }
 
+.blank {
+  display: none;
+}
+
 .cubespinner {
   animation-name: spincube;
   animation-timing-function: ease-in-out;
@@ -24,13 +28,13 @@
     width: 200px;
     height: 200px;
     border: 1px solid var(--primary-color);
-    background: rgba(3, 3, 3, 0.15);
+    background: rgba(198, 198, 198, 0.15);
     text-align: center;
     font-size: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 4px 0px var(--secondary-color)
+    box-shadow: 0 0 4px 0px var(--secondary-color);
   }
 
   .face1 {
@@ -81,8 +85,16 @@
     width: 100%;
     height: 0%;
     overflow: visible;
+    padding-bottom: 18%
   }
-  .cubespinner {
-    padding-bottom: 100px;
+  .blank {
+    display: block;
+    padding-top: 15%;
+  }
+
+  .cube-container {
+    width: 100%;
+    background-color: transparent;
+    height: 350px;
   }
 }
