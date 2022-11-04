@@ -19,29 +19,6 @@
     font-family: 'Coolvetica';
     font-weight: 400;
 
-    &::before {
-      content: '<h1>';
-      font-family: 'La belle Aurore';
-      color: var(--secondary-color);
-      position: absolute;
-      font-size: 18px;
-      margin-top: -40px;
-      left: -15px;
-      opacity: 0.6;
-    }
-
-    &::after {
-      content: '</h1>';
-      font-family: 'La belle Aurore';
-      color: var(--secondary-color);
-      position: absolute;
-      font-size: 18px;
-      margin-top: 18px;
-      margin-left: 20px;
-      animation: fadeIn 1s 1.7s backwards;
-      opacity: 0.6;
-    }
-
     img{
       width: 60px;
       margin-left: 20px;

@@ -8,9 +8,8 @@ import Portfolio from './components/Portfolio';
 import Dashboard from './components/Dashboard';
 
 function App() {
-
   return (
-    <>
+    <div>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -20,7 +19,7 @@ function App() {
           <Route path="dashboard" element={<Dashboard />} />
         </Route>
       </Routes>
-    </>
+    </div>
   );
 }
 
